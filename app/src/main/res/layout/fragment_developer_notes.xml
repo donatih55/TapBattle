@@ -1,0 +1,23 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.henriquedonati.tapbattle.DeveloperNotes"
+    android:background="#FFF"
+    android:layout_gravity="center"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/Thankyou"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:text="How to play?\nTap on your side of the screen to make it larger, wins the player who dominates the screen.\n\nThank you by playing\nBy Henrique Donati\nUpper Iowa University" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WebSIte"
+        android:id="@+id/Website"
+        android:onClick="goToWebsite"
+        android:layout_below="@id/Thankyou" />
+
+</RelativeLayout>

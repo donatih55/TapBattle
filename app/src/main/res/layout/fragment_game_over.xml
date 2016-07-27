@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:id="@+id/layoutBackground">
+
+    <TextView
+        android:id="@+id/playerWon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/leftScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0px"
+        android:text="0"
+        android:textSize="30px"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:textAlignment="gravity"
+        android:textColor="#f00"/>
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/playAgain"
+        android:hint="Play Again?"
+        android:onClick="startGame"
+        android:layout_weight="1" />
+
+    <Button
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainMenu"
+        android:hint="Main Menu"
+        android:onClick="mainMenu"
+        android:layout_weight="1" />
+    <TextView
+        android:id="@+id/rightScore"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="30px"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:textAlignment="gravity"
+        android:textColor="#f00"/>
+
+</LinearLayout>

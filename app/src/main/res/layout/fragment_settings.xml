@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#0FF">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/leftLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/textView"
+        android:background="#fff"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@+id/textView">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black"
+            android:id="@+id/leftBlack"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#000"
+            android:onClick="changeColorLeft"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:id="@+id/leftRed"
+            android:layout_below="@+id/leftBlack"
+            android:layout_centerHorizontal="true"
+            android:background="#F00"
+            android:onClick="changeColorLeft"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:id="@+id/leftGreen"
+            android:layout_below="@+id/leftRed"
+            android:layout_centerHorizontal="true"
+            android:background="#0F0"
+            android:onClick="changeColorLeft"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BLue"
+            android:id="@+id/leftBlue"
+            android:layout_below="@+id/leftGreen"
+            android:layout_centerHorizontal="true"
+            android:background="#00F"
+            android:onClick="changeColorLeft"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:id="@+id/leftYellow"
+            android:layout_below="@id/leftBlue"
+            android:layout_centerHorizontal="true"
+            android:background="#FF0"
+            android:onClick="changeColorLeft"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="White"
+            android:id="@+id/leftWhite"
+            android:layout_below="@+id/leftYellow"
+            android:layout_centerHorizontal="true"
+            android:background="#FFF"
+            android:onClick="changeColorLeft"/>
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a pic"
+            android:id="@+id/leftPic"
+            android:layout_below="@+id/leftWhite"
+            android:layout_centerHorizontal="true"
+            android:onClick="picLeft"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rightLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textView"
+        android:background="#000"
+        android:layout_gravity="center"
+        android:layout_toRightOf="@+id/textView">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Black"
+            android:id="@+id/rightBlack"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#000"
+            android:onClick="changeColorRight"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Red"
+            android:id="@+id/rightRed"
+            android:layout_below="@+id/rightBlack"
+            android:layout_centerHorizontal="true"
+            android:background="#F00"
+            android:onClick="changeColorRight"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Green"
+            android:id="@+id/rightGreen"
+            android:layout_below="@+id/rightRed"
+            android:layout_centerHorizontal="true"
+            android:background="#0F0"
+            android:onClick="changeColorRight"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blue"
+            android:id="@+id/rightBlue"
+            android:layout_below="@+id/rightGreen"
+            android:layout_centerHorizontal="true"
+            android:background="#00F"
+            android:onClick="changeColorRight"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yellow"
+            android:id="@+id/rightYellow"
+            android:layout_below="@+id/rightBlue"
+            android:layout_centerHorizontal="true"
+            android:background="#FF0"
+            android:onClick="changeColorRight"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="White"
+            android:id="@+id/rightWhite"
+            android:layout_below="@+id/rightYellow"
+            android:layout_centerHorizontal="true"
+            android:background="#FFF"
+            android:onClick="changeColorRight"/>
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take a pic"
+            android:id="@+id/rightPic"
+            android:layout_below="@+id/rightWhite"
+            android:layout_centerHorizontal="true"
+            android:onClick="picRight" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset Score"
+            android:id="@+id/button13"
+            android:layout_toRightOf="@+id/button14"
+            android:onClick="resetScore"
+ />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Main Menu"
+            android:id="@+id/button14"
+            android:onClick="mainMenu" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Settings"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#fff"/>
+
+
+
+</RelativeLayout>
